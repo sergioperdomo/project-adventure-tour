@@ -247,6 +247,8 @@ section{
   color: $black;
 }
 
+// Seccion de categoria
+
 .category{
 
   .box-container{
@@ -278,6 +280,126 @@ section{
   }
 }
 
+// Sección de about
+
+.about{
+  background: $light-bg;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .image{
+    flex: 1 1 42rem;
+
+    img{
+      width: 100%;
+      box-shadow: 4rem 4rem  0  rgba(0,0,0,.1);
+    }
+  }
+  .content{
+    flex: 1 1 42rem;
+
+    h3{
+      font-size: 3rem;
+      color: $green;
+
+    }
+    p{
+      font-size: 1.5rem;
+      color: $black;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}
+
+// Inicio de shop-tienda
+
+.shop{
+
+
+  .slide{ 
+    border: $border;
+
+    &:hover .image .icons{
+      transform: translateY(0);
+    }
+
+
+    .img{
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+      }
+
+      .icons{
+        width: 100%;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+        transform: translateY(7rem);
+
+
+        a{
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem,;
+          font-size: 1.7rem;
+          background: $black;
+          color:$white;
+          margin: 0 .2rem;
+
+
+          &:hover{
+            background: $green;
+            
+          }
+        }
+      }
+
+
+
+    }
+
+    .content{
+      padding: 1rem 0;
+      text-align: center;
+
+      h3{
+        font-size: 3rem;
+        color: $black;
+      }
+
+      .price{
+        padding: 1rem 0;
+        padding-top: .5rem;
+        font-size: 2rem;
+        color:$green;
+      }
+
+      .stars i{
+        font-size: 1.7rem;
+        color: $black;
+
+      }
+    }
+  }
+}
+
+
+
+
+
 
 
 
@@ -291,9 +413,11 @@ section{
     padding: 3rem 2rem;
   }
 }
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
 
   .home .box{

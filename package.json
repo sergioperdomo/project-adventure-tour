@@ -296,5 +296,13 @@
     "yallist": "^4.0.0",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergioperdomo/project-adventure-tour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergioperdomo/project-adventure-tour/issues"
+  },
+  "homepage": "https://github.com/sergioperdomo/project-adventure-tour#readme",
   "description": ""
 }
